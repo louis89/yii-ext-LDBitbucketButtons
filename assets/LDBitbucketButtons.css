@@ -1,0 +1,143 @@
+@CHARSET "UTF-8";
+.bitbucket-btn {
+  height: 20px;
+  font: bold 11px/14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+}
+.bb-btn,
+.bb-count,
+.bb-ico {
+  float: left;
+}
+.bb-btn,
+.bb-count {
+  padding: 2px 5px 2px 4px;
+  color: #555;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.bb-btn {
+  background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#eaeaea));
+  background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
+  background-image: -moz-linear-gradient(top, #fafafa, #eaeaea);
+  background-image: -ms-linear-gradient(#fafafa, #eaeaea);
+  background-image: -o-linear-gradient(#fafafa, #eaeaea);
+  background-image: linear-gradient(#fafafa, #eaeaea);
+  background-repeat: no-repeat;
+  border: 1px solid #d4d4d4;
+  border-bottom-color: #bcbcbc;
+}
+.bb-btn:hover,
+.bb-btn:focus,
+.bb-btn:active {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+  border-color: #518cc6 #518cc6 #2a65a0;
+  background-color: #3072b3;
+}
+.bb-btn:hover,
+.bb-btn:focus {
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+  background-image: -webkit-linear-gradient(#599bdc, #3072b3);
+  background-image: -moz-linear-gradient(top, #599bdc, #3072b3);
+  background-image: -ms-linear-gradient(#599bdc, #3072b3);
+  background-image: -o-linear-gradient(#599bdc, #3072b3);
+  background-image: linear-gradient(#599bdc, #3072b3);
+}
+.bb-btn:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 5px rgba(0,0,0,.10);
+     -moz-box-shadow: inset 0 2px 5px rgba(0,0,0,.10);
+          box-shadow: inset 0 2px 5px rgba(0,0,0,.10);
+}
+.bb-ico {
+  width: 14px;
+  height: 15px;
+  margin-top: -1px;
+  margin-right: 4px;
+  vertical-align: middle;
+  background-image: url(data:image/png;base64,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);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 0 0;
+}
+.bb-btn:hover .bb-ico,
+.bb-btn:focus .bb-ico,
+.bb-btn:active .bb-ico {
+  background-position: -15px 0;
+}
+.bb-count {
+  position: relative;
+  display: none; /* hidden to start */
+  margin-left: 4px;
+  background-color: #fafafa;
+  border: 1px solid #d4d4d4;
+}
+.bb-count:hover,
+.bb-count:focus {
+  color: #4183C4;
+}
+.bb-count:before,
+.bb-count:after {
+  content: ' ';
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.bb-count:before {
+  top: 50%;
+  left: -3px;
+  margin-top: -4px;
+  border-width: 4px 4px 4px 0;
+  border-right-color: #fafafa;
+}
+.bb-count:after {
+  top: 50%;
+  left: -4px;
+  z-index: -1;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #d4d4d4;
+}
+.bitbucket-btn-large {
+  height: 30px;
+}
+.bitbucket-btn-large .bb-btn,
+.bitbucket-btn-large .bb-count {
+  padding: 3px 10px 3px 8px;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 4px;
+}
+.bitbucket-btn-large .bb-ico {
+  width: 22px;
+  height: 23px;
+  background-position: 0 -20px;
+}
+.bitbucket-btn-large .bb-btn:hover .bb-ico,
+.bitbucket-btn-large .bb-btn:focus .bb-ico,
+.bitbucket-btn-large .bb-btn:active .bb-ico {
+  background-position: -25px -20px;
+}
+.bitbucket-btn-large .bb-count {
+  margin-left: 6px;
+}
+.bitbucket-btn-large .bb-count:before {
+  left: -5px;
+  margin-top: -6px;
+  border-width: 6px 6px 6px 0;
+}
+.bitbucket-btn-large .bb-count:after {
+  left: -6px;
+  margin-top: -7px;
+  border-width: 7px 7px 7px 0;
+}
