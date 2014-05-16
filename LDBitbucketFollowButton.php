@@ -1,8 +1,18 @@
 <?php
+/**
+ * LDBitbucketFollowButton class file.
+ *
+ * @author Louis A. DaPrato <l.daprato@gmail.com>
+ * @link https://lou-d.com
+ * @copyright 2014 Louis A. DaPrato
+ * @license The MIT License (MIT)
+ * @since 1.0
+ */
 
 require_once(dirname(__FILE__).DIRECTORY_SEPARATOR.'LDBitbucketButtonBase.php');
 
 /**
+ * Follow button for bitbucket
  * 
  * @author Louis A. DaPrato <l.daprato@gmail.com>
  *
@@ -27,24 +37,13 @@ class LDBitbucketFollowButton extends LDBitbucketButtonBase
 		}
 	}
 	
+	/**
+	 * (non-PHPdoc)
+	 * @see LDBitbucketButtonBase::getButtonUrl()
+	 */
 	public function getButtonUrl()
 	{
 		return self::buildUrl($this->user);
-	}
-	
-	public function getCounterUrl()
-	{
-		return self::buildUrl($this->user, 'followers');
-	}
-	
-	public function getApiUrl()
-	{
-		return self::buildApiUrl('users', $this->user);
-	}
-
-	public function getDataPropName()
-	{
-		return 'followers';
 	}
 
 }
